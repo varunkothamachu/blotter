@@ -61,24 +61,25 @@
 					</button>
 					{% if page.categories.first != 'home' %}
 					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
-					<a class="navbar-brand" href="/">bedford lab</a>
+					<a class="navbar-brand" href="/">VK</a>
 					{% endif %}
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-element">
 					<ul class="nav navbar-nav navbar-right">
-						{% if page.categories.first == 'blog' %}
+						{% if page.categories.first == 'education' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/blog/">blog</a>
-						</li>
+						<a href="/education/">education</a></li>
+
 						{% if page.categories.first == 'papers' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
 						<a href="/papers/">papers</a>
+
 						</li>
 						{% if page.categories.first == 'projects' %}
 						<li class="active">
@@ -86,12 +87,16 @@
 						<li>
 						{% endif %}
 						<a href="/projects/">projects</a></li>
-						<!--{% if page.categories.first == 'team' %}
+
+
+						{% if page.categories.first == 'blog' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/team/">team</a></li>-->
+						<a href="/blog/">blog</a>
+						</li>
+
 					</ul>
 				</div>
 			</div>
