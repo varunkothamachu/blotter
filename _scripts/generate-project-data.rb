@@ -6,7 +6,7 @@
 #  - owner: trvrb
 #  - title: coaltrace
 #  - description: Simulating genealogies using charged particles
-#  - url: /projects/coaltrace/
+#  - url: /research/coaltrace/
 #  - date: 2013-10-19 04:12:17 UTC
 #  - contributors:
 #      - login: trvrb
@@ -20,22 +20,22 @@
 require 'octokit'
 require 'yaml'
 
-module Projects
+module research
 
 	def self.generate_data(config_file)
 	
 		project_data = {}
 	
 		config = YAML.load_file(config_file)
-		projects_array = config["projects"]
+		research_array = config["research"]
 
-		puts "Generating projects"
+		puts "Generating research"
 		# create octokit client
 		client = Octokit::Client.new(:netrc => true, :access_token => ENV['GITHUB_TOKEN'])			
 
 		project_data = Array.new
-		if projects_array.length > 0
-			projects_array.each do |repo|
+		if research_array.length > 0
+			research_array.each do |repo|
 		
 				puts "\tGenerating #{repo}"
 			
@@ -44,7 +44,7 @@ module Projects
 				project_title = octokit_repo.name
 				project_owner = octokit_repo.owner.login
 				project_description = octokit_repo.description
-				project_url = "/projects/#{project_title}/"
+				project_url = "/research/#{project_title}/"
 				project_date = octokit_repo.updated_at
 			
 				# load contributor metadata
@@ -114,5 +114,5 @@ module Projects
 
 end
 
-project_data = Projects.generate_data("_config.yml")
-Projects.write_data(project_data, "_data/projects.yml")
+project_data = research.generate_data("_config.yml")
+research.write_data(project_data, "_data/research.yml")

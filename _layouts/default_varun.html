@@ -13,7 +13,7 @@
     <link href="/css/style.css" rel="stylesheet" media="screen">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/favicon.png"/>
+	<link rel="shortcut icon" href="/images/LogoIdea4_favicon.jpeg"/>
 
 	<!-- Typekit -->
 	<script>
@@ -60,7 +60,8 @@
 						<span class="icon-bar"></span>
 					</button>
 					{% if page.categories.first != 'home' %}
-					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
+					<object class="logo navbar-brand" type="image/svg+xml"></object>
+					<!--data="/images/LogoIdea4_favicon.jpeg"-->
 					<a class="navbar-brand" href="/">VK</a>
 					{% endif %}
 				</div>
@@ -73,20 +74,36 @@
 						{% endif %}
 						<a href="/education/">education</a></li>
 
-						{% if page.categories.first == 'papers' %}
+					  </li>
+					  {% if page.categories.first == 'work' %}
+				  	<li class="active">
+			  		{% else %}
+		  			<li>
+	  				{% endif %}
+  					<a href="/work/">work</a></li>
+
+						{% if page.categories.first == 'publications' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/papers/">papers</a>
+						<a href="/publications/">publications</a>
 
 						</li>
-						{% if page.categories.first == 'projects' %}
+						{% if page.categories.first == 'research' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/projects/">projects</a></li>
+						<a href="/research/">research</a></li>
+
+				 		</li>
+						{% if page.categories.first == 'ideas' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+					  <a href="/ideas/">ideas</a></li>
 
 
 						{% if page.categories.first == 'blog' %}

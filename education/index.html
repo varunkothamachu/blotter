@@ -1,21 +1,20 @@
 ---
 layout: default_varun
-title: Varun Kothamachu / Education
+title: Varun Kothamachu / education
 categories:
- - team
+ - education
 ---
 
-<div class="row">
+<!--<div class="row">
 	<div class="col-md-12">
 		<div class="title">
 			Current members
 		</div>
 	</div>
-</div>
+</div>-->
 
 <div class="bigspacer"></div>
-
-{% for member in site.categories.team reversed %}
+{% for member in site.categories.education reversed %}
 	{% if member.alumni != true %}
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 memberbox">
@@ -36,17 +35,17 @@ categories:
 {% endfor %}
 {% cycle 'close rows': nil, '</div>', '</div>' %}
 
-<div class="row">
+<!--<div class="row">
 	<div class="col-md-12">
 		<div class="title">
 			Past members
 		</div>
 	</div>
-</div>
+</div>-->
 
 <div class="bigspacer"></div>
 
-{% for member in site.categories.team reversed %}
+{% for member in site.categories.education reversed %}
 	{% if member.alumni == true %}
     {% cycle 'add rows 2': '<div class="row">', nil, nil %}
 		<div class="col-md-4 memberbox">

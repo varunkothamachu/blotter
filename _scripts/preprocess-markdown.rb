@@ -3,7 +3,7 @@
 # and to rename readme.md files to index.md
 
 # collect all markdown files 
-mdarray = Dir.glob("projects/**/*.md")
+mdarray = Dir.glob("research/**/*.md")
 
 # go through each markdown file
 mdarray.each { |md|
@@ -22,7 +22,7 @@ mdarray.each { |md|
 	# get project name if possible
 	project_name = nil
 	dirarray = File.dirname(md).split('/')
-	temp_name = dirarray[dirarray.index("projects") + 1]
+	temp_name = dirarray[dirarray.index("research") + 1]
 	if temp_name =~ /^[^_]/
 		project_name = temp_name
 	end
@@ -34,7 +34,7 @@ mdarray.each { |md|
 		out.puts "---"
 		out.puts "layout: project"
 		if project_name != nil
-			title = md.sub(/^.*projects\//, '').sub(/.md$/, '').sub(/index$/, '')
+			title = md.sub(/^.*research\//, '').sub(/.md$/, '').sub(/index$/, '')
 			out.puts "title: #{title}"		
 			out.puts "project: #{project_name}"
 			out.puts "permalink: /:path/:basename:output_ext"

@@ -36,18 +36,18 @@ exclude:
   - "*.nex"
   - "Gemfile"
   - "Gemfile.lock"
-  - "projects/nextflu/auspice/index.html"
-  - "projects/nextflu/auspice/css/*"
-  - "projects/nextflu/auspice/h3n2/*"
-  - "projects/nextflu/auspice/h1n1pdm/*"
-  - "projects/nextflu/auspice/vic/*"
-  - "projects/nextflu/auspice/yam/*"
-  - "projects/nextflu/auspice/zika/*"  
-  - "projects/nextflu/auspice/muttree/*"
-  - "projects/nextflu/auspice/reports/*"
-  - "projects/nextflu/auspice/js/*"    
+  - "research/nextflu/auspice/index.html"
+  - "research/nextflu/auspice/css/*"
+  - "research/nextflu/auspice/h3n2/*"
+  - "research/nextflu/auspice/h1n1pdm/*"
+  - "research/nextflu/auspice/vic/*"
+  - "research/nextflu/auspice/yam/*"
+  - "research/nextflu/auspice/zika/*"  
+  - "research/nextflu/auspice/muttree/*"
+  - "research/nextflu/auspice/reports/*"
+  - "research/nextflu/auspice/js/*"    
 
-projects:
+research:
   - trvrb/coaltrace
   - trvrb/stem
   - trvrb/PACT
