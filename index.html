@@ -79,14 +79,14 @@ categories:
 <div class="row" style="background-color: antiquewhite;">
 	<div class="col-md-12" style="background-color: antiquewhite;">
 		<div class="head" >
-			<a class="off" href="/publications/">Recent publications</a>
+			<a class="off" href="/papers/">Recent papers</a>
 		</div>
 		<div class="spacer" style="background-color: antiquewhite;"></div>
 	</div>
 </div>
 
 <div class="row" style="background-color: antiquewhite;">
-	{% for paper in site.categories.publications limit:4 %}
+	{% for paper in site.categories.papers limit:4 %}
 	<div class="col-md-3 reduced-gutter" style="background-color: antiquewhite;">
 		<div class="pad-left">
 			<div class="note">
@@ -146,7 +146,7 @@ categories:
 
 <div class="spacer" style="background-color: antiquewhite;"></div>
 
-<!--<div class="row">
+<div class="row">
 	<div class="col-md-12" style="background-color: antiquewhite;">
 		<div class="head">
 			Misc
@@ -164,7 +164,7 @@ categories:
 					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
 				</li>
 				{% endfor %}
-				<li class="footernav">
+				<!--<li class="footernav">
 					<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
 				</li>
 				<li class="footernav">

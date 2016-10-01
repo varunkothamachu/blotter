@@ -67,7 +67,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-element">
 					<ul class="nav navbar-nav navbar-right">
-						{% if page.categories.first == 'education' %}
+						<!--{% if page.categories.first == 'education' %}
 						<li class="active">
 						{% else %}
 						<li>
@@ -80,14 +80,22 @@
 			  		{% else %}
 		  			<li>
 	  				{% endif %}
-  					<a href="/work/">work</a></li>
+  					<a href="/work/">work</a></li>-->
 
-						{% if page.categories.first == 'publications' %}
+						{% if page.categories.first == 'blog' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/publications/">publications</a>
+						<a href="/blog/">blog</a>
+						</li>
+						
+						{% if page.categories.first == 'papers' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="/papers/">papers</a>
 
 						</li>
 						{% if page.categories.first == 'research' %}
@@ -105,16 +113,7 @@
 						{% endif %}
 					  <a href="/ideas/">ideas</a></li>
 
-
-						{% if page.categories.first == 'blog' %}
-						<li class="active">
-						{% else %}
-						<li>
-						{% endif %}
-						<a href="/blog/">blog</a>
-						</li>
-
-					</ul>
+				</ul>
 				</div>
 			</div>
 		</nav>

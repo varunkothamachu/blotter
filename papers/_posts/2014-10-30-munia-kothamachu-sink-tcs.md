@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Phosphate Sink Containing Two-Component Signaling Systems as Tunable Threshold Devices
-#image: /images/publications/kothamachu-phosphorelay-tunable.png
+#image: /images/papers/kothamachu-phosphorelay-tunable.png
 authors: Munia Amin, Varun B. Kothamachu, Elisenda Feliu, Birgit E. Scharf, Steven L. Porter, Orkun S. Soyer
 year: 2014
 ref: Amin M, Kothamachu VB, Feliu E, Scharf BE, Porter SL, et al.
 journal: "PLoS Comput Biol 10(10): e1003890"
-pdf: /pdfs/publications/munia-kothamachu-sink-tcs.pdf
+pdf: /pdfs/papers/munia-kothamachu-sink-tcs.pdf
 doi: 10.1371/journal.pcbi.1003890
 ---
 

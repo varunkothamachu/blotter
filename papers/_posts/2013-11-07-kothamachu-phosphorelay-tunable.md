@@ -1,12 +1,12 @@
 ---
 layout: paper
 title: Phosphorelays provide tunable signal processing capabilities for the cell
-#image: /images/publications/kothamachu-phosphorelay-tunable.png
+#image: /images/papers/kothamachu-phosphorelay-tunable.png
 authors: Varun B. Kothamachu, Elisenda Feliu, Carsten Wiuf, Luca Cardelli, Orkun S. Soyer
 year: 2013
 ref: Kothamachu VB, Feliu E, Wiuf C, Cardelli L, Soyer OS.
 journal: "PLoS Comput Biol 9(11): e1003322."
-pdf: /pdfs/publications/kothamachu-phosphorelay-tunable.pdf
+pdf: /pdfs/papers/kothamachu-phosphorelay-tunable.pdf
 doi: 10.1371/journal.pcbi.1003322
 ---
 
