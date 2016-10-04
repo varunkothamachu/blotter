@@ -113,24 +113,24 @@ categories:
 </div>
 
 <div class="row">
-	{% for project in site.data.research limit:4 %}
+	{% for research in site.data.research limit:4 %}
 	<div class="col-md-3 reduced-gutter" style="background-color: antiquewhite;">
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-edit fa-fw"></i>
-				<a class="off" href="{{ project.url }}">
-				{{ project.title }} - {{ project.description }}
+				<a class="off" href="{{ research.url }}">
+				{{ research.title }} - {{ research.description }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
-				{{ project.commits.first.date | date: "%-d %b %Y" }}
+				<a class="off" href="{{ research.commits.first.url }}">
+				{{ research.commits.first.date | date: "%-d %b %Y" }}
 				</a>
 				by
-				<a class="off" href="{{ project.commits.first.author_url }}">
-				{{ project.commits.first.author_login }}
+				<a class="off" href="{{ research.commits.first.author_url }}">
+				{{ research.commits.first.author_login }}
 				</a>
 			</div>
 			<div class="bigspacer" style="background-color: antiquewhite;"></div>

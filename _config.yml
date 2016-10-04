@@ -1,12 +1,12 @@
-name: Bedford Lab Research
-description: Science updates on evolution, epidemiology and immunology from the Bedford lab at the Fred Hutch
-url: http://bedford.io
+name: Varun Kothamachu Portfolio
+description: Portfolio of work discussing research , product development, synthetic biology, startups and creative musings.
+url: http://varunkothamachu.com
 
 markdown: redcarpet
 permalink: /:categories/:title/
 future: true
 
-redcarpet: 
+redcarpet:
   extensions:
    - tables
    - no_intra_emphasis
@@ -42,28 +42,8 @@ exclude:
   - "research/nextflu/auspice/h1n1pdm/*"
   - "research/nextflu/auspice/vic/*"
   - "research/nextflu/auspice/yam/*"
-  - "research/nextflu/auspice/zika/*"  
+  - "research/nextflu/auspice/zika/*"
   - "research/nextflu/auspice/muttree/*"
   - "research/nextflu/auspice/reports/*"
-  - "research/nextflu/auspice/js/*"    
-
-research:
-  - trvrb/coaltrace
-  - trvrb/stem
-  - trvrb/PACT
-  - trvrb/dynamics-practical
-  - trvrb/antigen
-  - trvrb/haplotypes
-  - trvrb/divergence
-  - trvrb/ancestry
-  - trvrb/medium-data
-  - trvrb/flutrace
-  - blab/nextflu
-  - alvason/infectious-pulse
-  - blab/global-migration
-  - trvrb/sismid
-  - trvrb/sctrace
-  - trvrb/phylodynamics-lecture
-  - blab/nextstrain-db
-  - blab/nextstrain-augur
-  - blab/nextstrain-auspice
+  - "research/nextflu/auspice/js/*"
+  - "research/Azo-dye-degradation-mvit/index.html"
